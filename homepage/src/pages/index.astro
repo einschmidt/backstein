@@ -4,6 +4,7 @@ import Header from "../components/Header.astro";
 import Zitat from "../components/Zitat.astro";
 import Introduction from "../components/Introduction.astro";
 import Rules from "../components/Rules.astro";
+import Spielfeld from "../components/Spielfeld.astro";
 ---
 
 <Layout title="Backstein - Das Spiel">
@@ -18,4 +19,12 @@ import Rules from "../components/Rules.astro";
   </div>
 
   <Rules />
+
+  <div class="relative w-full py-12">
+    <div class="flex" aria-hidden="true">
+      <div class="border-t border-red-700 w-4/12 mx-auto"></div>
+    </div>
+  </div>
+
+  <Spielfeld />
 </Layout>
