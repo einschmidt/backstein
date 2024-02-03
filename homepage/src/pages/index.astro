@@ -1,123 +1,21 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Zitat from "../components/Zitat.astro";
+import Introduction from "../components/Introduction.astro";
+import Rules from "../components/Rules.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-  <div class="">
-    <div class="max-w-7xl mx-auto h-16 p-4">
-      <span class="text-xl font-bold text-red-700">BACKSTEIN</span>
-    </div>
+<Layout title="Backstein - Das Spiel">
+  <Header />
+  <Zitat />
+  <Introduction />
 
-    <div class="h-auto bg-red-700 p-5 py-8 text-center text-5xl">
-      <p class="text-white font-serif max-w-7xl mx-auto">
-        Backstein kann man mit allem spielen, außer Bällen!
-      </p>
-      <p class="pt-2 text-red-200 text-base font-bold uppercase">
-        Alte chinesische Weißheit
-      </p>
-    </div>
-
-    <div class="p-4 py-8">
-      <div class="max-w-7xl mx-auto">
-        <p class="font-bold text-red-700">Was ist Backstein?</p>
-        <p class="text-gray-700 pt-4">
-          Backstein ist eines der ältesten Spiele der Welt. Es handelt sich um
-          eine Mischung aus Strategie- und Glücksspiel, bei dem zwei oder mehr
-          Spieler abwechselnd den Backstein auf einem Spielbrett (der Arena)
-          bewegen. Ziel des Spiels ist es, den Gegner dumm dastehen zu lassen,
-          das heißt, dessen Backstein so anzugreifen, dass der eigene Backstein
-          noch dümmer dasteht.
-        </p>
-        <p class="text-gray-700 pt-4">
-          Backstein ist weltweit bekannt und hat eine tiefe kulturelle Bedeutung
-          erlangt. Viele Backsteinspieler sind Mitglieder von Backsteinvereinen.
-          Backsteinturniere werden von privaten Veranstaltern, von
-          Backsteinvereinen oder von Backsteinverbänden organisiert. Backstein
-          gilt als Sportart. Derzeitiger Backsteinweltmeister ist Thomas Leguano
-          aus Österreich.
-        </p>
-      </div>
-    </div>
-
-    <div class="h-1 bg-red-700"></div>
-
-    <div class="h-auto bg-white p-4 py-8">
-      <div class="max-w-7xl mx-auto">
-        <p class="font-bold text-red-700">Regelwerk</p>
-        <p class="text-gray-600 pt-4">
-          Backstein wird auf eine einzigartige Weise gespielt, indem ein
-          einzelner Backstein abwechselnd von den Spielern im Raum bewegt wird.
-          Hier sind einige grundlegende Regeln:
-          <!-- Hier kommt das neue Regelwerk -->
-          <ul>
-            <li>
-              <strong>Spielvorbereitung:</strong> Ein Backstein pro Spiel: Jeder
-              Spieler verfügt über einen eigenen Backstein. Spielfelddefinition:
-              Das Spielfeld wird durch den Raum um den Backstein definiert. Es gibt
-              keine festen Linien oder Begrenzungen.
-            </li>
-            <li>
-              <strong>Ziel des Spiels:</strong> Dumm dastehen: Das Ziel von Backstein
-              bleibt unverändert - den gegnerischen Backstein in eine Position zu
-              bringen, die als "dumm dastehen" bezeichnet wird.
-            </li>
-            <li>
-              <strong>Spielablauf:</strong> Abwechselnd: Die Spieler führen abwechselnd
-              ihre Züge durch, indem sie ihren Backstein im Raum bewegen. Bewegungsfreiheit:
-              Der Backstein kann sich horizontal, vertikal oder diagonal bewegen,
-              wobei die Bewegung auf den verfügbaren Raum um den Backstein beschränkt
-              ist.
-            </li>
-            <li>
-              <strong>Angriffe:</strong> Taktische Züge: Ein Spieler kann den gegnerischen
-              Backstein durch geschickte Bewegungen angreifen und in eine ungünstige
-              Position bringen. Gegenangriffe: Spieler können durch kluge Verteidigungsmanöver
-              auf Angriffe reagieren und ihren eigenen Backstein schützen.
-            </li>
-            <li>
-              <strong>Spielvarianten:</strong> Backsteinarten: Unterschiedliche Backsteinvarianten
-              können eingeführt werden, um dem Spiel mehr Tiefe zu verleihen. Diese
-              können einzigartige Fähigkeiten oder spezielle Bewegungsmuster haben.
-            </li>
-            <li>
-              <strong>Strafen und Belohnungen:</strong> Regelverstöße: Bei Regelverstößen
-              oder unfairem Spielverhalten können Strafen verhängt werden, die den
-              Spielverlauf beeinflussen. Belohnungen: Besondere Züge oder taktische
-              Meisterleistungen können durch Belohnungen wie zusätzliche Züge oder
-              erweiterte Bewegungsfreiheit honoriert werden.
-            </li>
-
-            <li>
-              <strong>Backsteinvereine und Turniere:</strong> Mitgliedschaft: Spieler
-              können Mitglieder von Backsteinvereinen werden, um an exklusiven Veranstaltungen
-              teilzunehmen und ihre Fähigkeiten zu verbessern. Turniere: Backsteinturniere
-              werden auf verschiedenen Ebenen organisiert, von lokalen Veranstaltungen
-              bis zu internationalen Meisterschaften. Der Backsteinweltmeister wird
-              in einem hochkarätigen Turnier ermittelt.
-            </li>
-            <li>
-              <strong>Kulturelle Bedeutung:</strong> Traditionen und Rituale: Backstein
-              hat im Laufe der Zeit eine tiefe kulturelle Bedeutung entwickelt. Spieler
-              und Fans können spezielle Rituale oder Traditionen pflegen, um ihre
-              Verbundenheit mit dem Spiel auszudrücken.
-            </li>
-            <li>
-              <strong>Weltmeister und Ranglisten:</strong> Titelverteidigung: Der
-              amtierende Backsteinweltmeister hat die Aufgabe, seinen Titel in speziellen
-              Wettkämpfen zu verteidigen. Ranglisten: Es gibt offizielle Ranglisten,
-              die die besten Backsteinspieler der Welt nach ihrer Leistung bewerten.
-            </li>
-            <li>
-              <strong>Sonstige Bestimmungen:</strong> Bälle sind verboten: Im Sinne
-              der Tradition und des einzigartigen Charakters von Backstein ist die
-              Verwendung von Bällen als Spielgerät ausdrücklich untersagt.
-            </li>
-
-            <!-- Weitere Regelungen können hier ergänzt werden -->
-          </ul>
-          <!-- Ende des neuen Regelwerks -->
-        </p>
-      </div>
+  <div class="relative w-full py-12">
+    <div class="flex" aria-hidden="true">
+      <div class="border-t border-red-700 w-4/12 mx-auto"></div>
     </div>
   </div>
+
+  <Rules />
 </Layout>
